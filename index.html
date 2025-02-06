@@ -40,41 +40,53 @@
   </nav>
 </header>
 <main>
-  <section><p>Beef ribs spare ribs pork chop, tri-tip pork venison chislic landjaeger. Pastrami ribeye beef ribs
-    andouille porchetta landjaeger. Tongue pork chop pork belly andouille. Shoulder brisket pork loin beef ribs
-    pastrami. Brisket jowl ham cow tri-tip strip steak corned beef fatback. Hamburger boudin pig biltong venison
-    frankfurter buffalo turducken tri-tip. Beef filet mignon strip steak, picanha porchetta spare ribs rump salami
-    andouille pancetta boudin turducken pig capicola.</p>
+  <section><p>This site is a landing page for many of the apps and tools I created and published online (on <a
+    href="https://www.netlify.com/" target="_blank">Netlify</a> (I'm a huge fan of Netlify).</p>
   </section>
   <article>
     <h1>JSON Body Cloud Function</h1>
-    <p>Bacon ipsum dolor amet buffalo hamburger beef ribs pork belly, brisket shank pastrami chuck chislic. Capicola
-      chuck landjaeger short loin. Beef alcatra rump fatback, prosciutto short ribs meatloaf frankfurter tenderloin
-      cupim pastrami bresaola meatball leberkas. Bresaola ribeye swine cow shoulder tri-tip landjaeger drumstick fatback
-      ball tip tenderloin biltong.</p>
+    <p>This a simple cloud function I created for my <a href="https://github.com/johnwargo/https-client-esp32-json-body"
+                                                        target="_blank">ESP32 HTTPS Client Request with JSON Body</a>
+      project. The project shows how to write an Arduino sketch for ESP32 that connects to a remote host and passes
+      request parameters in the request body in JSON format. This project is the target host for that sketch.</p>
     <form>
       <h2>Calling the Cloud Function</h2>
-      <p>The function requires that the <strong>param1</strong> and <strong>param2</strong> properties contain string values (strings with length greater than zero). When you populate values for both fields, the function call succeeds. If one or both fields are blank (empty), the function call fails.</p>
+      <p>The function requires that the <strong>param1</strong> and <strong>param2</strong> properties contain string
+        values (strings with length greater than zero). When you populate values for both fields, the function call
+        succeeds. If one or both fields are blank (empty), the function call fails.</p>
       <label for="param1">Param1:</label>
       <input id="param1" type="text" value="this"/>
       <label for="param2">Param2:</label>
       <input id="param2" type="text" value="that"/>
       <button id="btnJSONBody">Call Cloud Function</button>
     </form>
-    <p><a href="https://johnwargo.com/posts/2025/http-client-esp32-with-json-body/" target="_blank">Blog reference</a> | <a href="https://github.com/johnwargo/jmw-demos-google-functions" target="_blank">Source Code</a></p>
+    <p><a href="https://johnwargo.com/posts/2025/http-client-esp32-with-json-body/" target="_blank">Blog reference</a> |
+      <a href="https://github.com/johnwargo/jmw-demos-google-functions" target="_blank">Source Code</a></p>
   </article>
   <article>
     <h1>Cert2Arduino</h1>
-    <p>Strip steak cupim pork loin frankfurter burgdoggen prosciutto. Fatback ground round jowl pork chop strip steak
-    hamburger frankfurter. Meatloaf pork chop t-bone pancetta hamburger chislic drumstick cupim fatback bacon salami.
-      Rump meatball flank hamburger bacon.</p>
+    <p>This is a simple web application that allows visitors to convert a downloaded certificate file (a
+      <code>.pem</code> or <code>.crt</code> file) into a header file you can use with an <a
+        href="https://www.espressif.com/" target="_blank">Espressif</a> device (ESP-32, for example) in the Arduino IDE
+      to make secure connections (HTTPS) to remote servers. Without access to the certificate, an Arduino sketch cannot
+      connect to the remote server over a secure connection.</p>
+    <p>My <a href="https://github.com/johnwargo/https-client-esp32" target="_blank">ESP32 HTTPS Client Request</a> and
+      <a href="https://github.com/johnwargo/https-client-esp32-json-body" target="_blank">ESP32 HTTPS Client Request
+        with JSON Body</a> projects use this app to generate the certificate used to connect to a remote server using
+      TLS from an Arduino sketch.</p>
+    <p><a href="https://johnwargo.com/posts/2025/public-cert-arduino/" target="_blank">Blog reference</a> | <a
+      href="https://github.com/johnwargo/Cert2Arduino" target="_blank">Source Code</a></p>
     <button id="btnCert2Arduino">Launch App</button>
   </article>
   <article>
     <h1>Goodreads Page Adjuster</h1>
-    <p>Strip steak cupim pork loin frankfurter burgdoggen prosciutto. Fatback ground round jowl pork chop strip steak
-      hamburger frankfurter. Meatloaf pork chop t-bone pancetta hamburger chislic drumstick cupim fatback bacon salami.
-      Rump meatball flank hamburger bacon.</p>
+    <p>This is a simple app that allows users to easily calculate an adjusted page number based on the actual length of
+      the book's readable content. You enter the current page you're on plus the actual total page count (subtracting
+      the stuff at the end you'll never read) and the Goodreads page count. The app then calculates an adjusted page
+      count that scales your current page based on the total (goodreads) page count so the percentage progress
+      calculation Goodreads does will be correct.</p>
+    <p><a href="https://johnwargo.com/posts/2022/accurately-calculating-progress-in-goodreads/" target="_blank">Blog
+      reference</a> | <a href="https://github.com/johnwargo/goodreads-page-adjuster" target="_blank">Source Code</a></p>
     <button id="btnGoodreads">Launch App</button>
   </article>
 </main>
