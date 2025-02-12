@@ -6,6 +6,4 @@ The static website for https://demos.johnwargo.com
 
 ## Tasks
 
-- [ ] Add an Icon
-- [ ] Add Google Analytics
 - [ ] Write the Readme file content
