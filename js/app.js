@@ -71,7 +71,8 @@ function callJSONBody(event) {
 // ********************************************************
 // Cert2Arduino
 // ********************************************************
-function launchCert2Arduino() {
+function launchCert2Arduino(event) {
+  event.preventDefault();
   console.log('Launching Cert2Arduino');
   window.open('https://cert2arduino.netlify.app/', '_blank');
 }
@@ -79,7 +80,8 @@ function launchCert2Arduino() {
 // ********************************************************
 // Goodreads Page Adjuster
 // ********************************************************
-function launchGoodreads() {
+function launchGoodreads(event) {
+  event.preventDefault();
   console.log('Launching Goodreads');
   window.open('https://goodreads-page-adjuster.netlify.app/', '_blank');
 }
