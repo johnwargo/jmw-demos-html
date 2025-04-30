@@ -32,12 +32,12 @@ function callJSONBody(event) {
     headers: {'Content-Type': 'application/json'},
     body
   }
-
+console.log(`Fetching: ${targetHost}`)
   fetch(targetHost, fetchOptions)
     .then(response => {
       responseCode = response.status;
       console.log(`Response Code: ${response.status}`);
-      console.log(response);
+      console.dir(response);
       return response.text();
     })
     .then(text => {
