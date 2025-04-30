@@ -44,12 +44,14 @@ console.log(`Fetching: ${targetHost}`)
       // Handle the JSON data returned by the server
       console.log(`Response: ${text}`);
       if (responseCode === 200) {
+        console.log('Success!');
         Swal.fire({
           icon: 'success',
           text: text,
           confirmButtonText: 'Excellent!'
         });
       } else {
+        console.log('Success Not!');
         Swal.fire({
           icon: 'warning',
           text: text,
@@ -59,7 +61,7 @@ console.log(`Fetching: ${targetHost}`)
     })
     .catch(error => {
       // Handle any errors
-      console.error('Error:', error);
+      console.error('Error:', error.message);
       Swal.fire({
         icon: 'error',
         text: error.message,
